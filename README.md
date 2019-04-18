@@ -18,7 +18,7 @@ yarn run dev
 
  
 
-现在主进程 /src/main/index.js
+先在主进程 /src/main/index.js
 
 ![](http://1.z9ls.com/t6/701/1555557607x2890149512.png)
 
