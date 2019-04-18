@@ -1,7 +1,3 @@
-~~~js
-```js
-
-```
 
 //创建electron-vue项目
 
@@ -11,7 +7,6 @@ yarn
 
 yarn run dev
 
-~~~
 
 目录结构
 
