@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+    <title>Document</title>
+    <style>
+        @page {
+            margin: 0;
+        }
+        .a {
+            padding-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='app'>
+        <div class="a" v-for="v in arr">{{v}}</div>
+    </div>
+</body>
+<script>
+    //引入ipcRenderer对象
+    const {
+        ipcRenderer
+    } = require('electron')
+    new Vue({
+        el: "#app",
+        data: {
+            arr: []
+        },
+        mounted() {
+            ipcRenderer.on('ping', (e, arr) => { //接收响应
+                console.log(e)
+                console.log(arr)
+                this.arr = arr;
+                ipcRenderer.sendToHost('pong') //向webview所在页面的进程传达消息
+            })
+        },
+        methods: {}
+    })
+</script>
+
+</html>
