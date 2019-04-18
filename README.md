@@ -15,19 +15,23 @@ yarn run dev
 
 目录结构
 
- 
+ ![](http://1.z9ls.com/t6/701/1555557576x2890149512.png)
 
  
 
-![计算机生成了可选文字: 0 nodemodules JSindex.devjs JSindex.js renderer 3ets components LendingPage VLandingPage.vue router Store VApp.vue JSmaln.JS 0indexes stetlc 0.gitkeep 0print.html .babelrc 0gno .travis.yml eppv00到 {}packagejson ）README.md 'yarn.lock](file:///C:/Users/95147/AppData/Local/Temp/msohtmlclip1/01/clip_image001.png)
 
- 
 
  
 
 现在主进程 /src/main/index.js
 
-![计算机生成了可选文字: import{ Browserwindow, ipcMain }from'electron'](file:///C:/Users/95147/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png)
+![](http://1.z9ls.com/t6/701/1555557607x2890149512.png)
+
+
+
+
+
+
 
 ~~~js
 *import* {
@@ -49,7 +53,7 @@ ipcMain
 
 然后
 
-![计算机生成了可选文字: functioncreateWindow(){ *丆n讠t讠al讠ndOopt讠0冂s mainWindow=newBrowserWindow({ height:799， useContentSize:true, width:1299 //在杰应/、《，n对满过专以叨etpr讠nters亡 ipcMain·on（《getPrinterList event //杰应屮寮攻£／旒列々 constlist=mainWindow.webContents.getPrinters(), //涵“bC。冂t“亡s角7》憑00，／0筝£／旒列々也专去 mainWindow·webContents·send(《getPrinterList list); mainWindow.loadURL(winURL) mainWindow.on（《closed' mainWindow=nu11](file:///C:/Users/95147/AppData/Local/Temp/msohtmlclip1/01/clip_image003.png)
+![](http://1.z9ls.com/t6/701/1555557617x2890149512.png)
 
  
 
@@ -73,7 +77,7 @@ mainWindow.webContents.send('getPrinterList', list);
 
 接下来在LandingPage.vue中也就是渲染进程中添加代码
 
-![计算机生成了可选文字: conStipcRenderer require("electron")·ipcRenderer； exportdefault{ "landing-page' name： components:{}， data(){ return{}； mounted(){ this·getPrinterList()．//先' methods:{ getPrinterList(){ ipcRenderer·send("）， ipcRenderer·once（"getPrinterList (event console.log(data)； data)](file:///C:/Users/95147/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png)
+![](http://1.z9ls.com/t6/701/1555557627x2890149512.png)
 
 先引入
 
@@ -95,9 +99,7 @@ console.log(data);
 });
 ~~~
 
-
-
-![计算机生成了可选文字: Lnd1n三P．V」巴？匕115：25 "SendTOOnt已2315到，0pt10n5：{A},Status：2} 0《「OSOftXPSDocument「It已「",optIons：Status： 0《「OSOftP「Intt0PDF",options：00JStatus：2} 1： 2： 4： 5： {亡已5匚「IPt10n {亡已5匚「IPt10n· {亡已5匚「IPt10n· {亡已5匚「IPt10n· {亡已5匚「IPt10n· {亡5〔「IPt10n。 ISDefauIt： ISDefauIt： ISDefauIt： ISDefauIt： ISDefauIt： ISDefauIt： false, false, false, false, false, n佣e： n佣e： n佣e： n佣e： 到Gp「Int巴「一1624optIons：{．“ •Fax"，00t1Dn5：Status：2} "\、172．16．1．167、闩PLaserJet1222" StatuS：2} opt10ns：《“}，Status length：5](file:///C:/Users/95147/AppData/Local/Temp/msohtmlclip1/01/clip_image005.png)
+![](http://1.z9ls.com/t6/701/1555558322x2918527158.png)
 
 这是我这里获取到的所有打印设备
 
@@ -105,11 +107,11 @@ console.log(data);
 
 重点来了
 
-![计算机生成了可选文字: 艿index.devjs JSindex.js renderer 3ets components LendingPage VLandingPage.vue router Store VApp.vue JSmaln.JS 0indexes stetlc](file:///C:/Users/95147/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png)
+![](http://1.z9ls.com/t6/701/1555558166x2918527158.png)
 
 如果在components中创建的话，会报一个错
 
-![计算机生成了可选文字: ．electron-print FileEditViewWindowHelp 2已二二003三《/03/0兰飞二0杰0皿二](file:///C:/Users/95147/AppData/Local/Temp/msohtmlclip1/01/clip_image007.png)
+![](http://1.z9ls.com/t6/701/1555558152x2918527158.png)
 
 索性直接方法static中，如果你害怕打包后会找不到的话，我在最后会提供一个方法
 
@@ -287,9 +289,7 @@ console.log("webview success", data);
 }
 ~~~
 
- ![1555556542836](C:\Users\95147\AppData\Roaming\Typora\typora-user-images\1555556542836.png)
-
-  
+![](http://1.z9ls.com/t6/701/1555558189x2918527158.png)
 
 最后在package.json中修改
 
@@ -307,12 +307,10 @@ console.log("webview success", data);
 
 打包后，electron-print\build\win-ia32-unpacked\resources中就会存在static
 
-![计算机生成了可选文字: 名称 到static 0app.a“r 0electron.asar elevate.exe 修改日期 201g/4/1810：55 201g/4/1810：55 201g/4/1810：55 2017/g/2516：57 ASAR ASAR 应甲程序 838KB 255KB 105KB 〔18）](file:///C:/Users/95147/AppData/Local/Temp/msohtmlclip1/01/clip_image009.png)
-
- 
+![](http://1.z9ls.com/t6/701/1555558201x2918527158.png)
 
 static中
 
-![计算机生成了可选文字: 名称 0print.htm 修改日期 201g/4/1810：34 ChromeHTML 2KB](file:///C:/Users/95147/AppData/Local/Temp/msohtmlclip1/01/clip_image010.png)
+![](http://1.z9ls.com/t6/701/1555558215x2918527158.png)
 
  
