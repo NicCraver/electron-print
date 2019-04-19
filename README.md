@@ -1,3 +1,5 @@
+简书上写了更详细的的文档
+https://www.jianshu.com/p/45df1dc37478
 
 //创建electron-vue项目
 
