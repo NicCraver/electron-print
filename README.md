@@ -225,7 +225,9 @@ export default {
 ```
 
 运行代码
+
 ![打印](http://upload-images.jianshu.io/upload_images/15562516-5fffc25bfa27c616.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 打包的方法！！！
 打包前在package.json中修改
@@ -243,7 +245,9 @@ export default {
 
 打包后，electron-print\build\win-ia32-unpacked\resources中就会存在static
 ![打包后目录](http://upload-images.jianshu.io/upload_images/15562516-00af6067ba65f9dd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 static中
+
 ![打包后目录](http://upload-images.jianshu.io/upload_images/15562516-bd25464efc41abb9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 如果觉得有用请点个赞，转发请注明来源，谢谢
