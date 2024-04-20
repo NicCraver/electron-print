@@ -1,4 +1,4 @@
-https://socialify.git.ci/NicCraver/electron-print/image?forks=1&language=1&name=1&owner=1&stargazers=1&theme=Light
+![electron-print](https://socialify.git.ci/NicCraver/electron-print/image?forks=1&language=1&name=1&owner=1&stargazers=1&theme=Light)
 
 简书上写了更详细的的文档
 https://www.jianshu.com/p/45df1dc37478
